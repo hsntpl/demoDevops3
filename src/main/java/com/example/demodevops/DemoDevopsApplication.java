@@ -9,5 +9,5 @@ public class DemoDevopsApplication {
     public static void main(String[] args) {
         SpringApplication.run(DemoDevopsApplication.class, args);
     }
-// "Hasan TEST yorumudur 3"
+// "Hasan TEST yorumudur 3 güncelleme"
 }
