@@ -1,6 +1,6 @@
 #uygulama icin jre
-#FROM eclipse-temurin:21-jre-alpine
-FROM amazoncorretto:21
+FROM eclipse-temurin:21-jre-alpine
+#FROM amazoncorretto:21
 #proje jar dosyası
 ARG JAR_FILE=target/demoDevops-1.0.1.jar
 
