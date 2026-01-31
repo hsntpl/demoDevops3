@@ -15,6 +15,6 @@ public class DevopsController {
 
     @GetMapping("info")
     public String info(){
-        return "Hello INFO HSN" + LocalDateTime.now();
+        return "Hello INFO HSN versiyon 1.0.1 oldu"  + LocalDateTime.now();
     }
 }

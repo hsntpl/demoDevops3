@@ -2,9 +2,9 @@
 FROM eclipse-temurin:21-jre-alpine
 
 #proje jar dosyası
-ARG JAR_FILE=target/demoDevops-0.0.1-SNAPSHOT.jar
+ARG JAR_FILE=target/demoDevops-1.0.1.jar
 
-#projenin jar hali docker ivine kopyala
+#projenin jar hali docker icine kopyala
 COPY ${JAR_FILE} hsn_app.jar
 
 #uygulama ic portu sabitle
