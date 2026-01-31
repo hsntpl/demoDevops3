@@ -2,7 +2,7 @@
 FROM eclipse-temurin:21-jre-alpine
 #FROM amazoncorretto:21
 #proje jar dosyası
-ARG JAR_FILE=target/demoDevops-1.0.1.jar
+ARG JAR_FILE=target/*.jar
 
 #projenin jar hali docker icine kopyala
 COPY ${JAR_FILE} hsn_app.jar
