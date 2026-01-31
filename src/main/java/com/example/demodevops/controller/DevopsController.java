@@ -10,11 +10,11 @@ public class DevopsController {
 
     @GetMapping
     public String devopsHello(){
-        return "Hello Devops HSN";
+        return "Hello Devops HSN 1.0.2";
     }
 
     @GetMapping("info")
     public String info(){
-        return "Hello INFO HSN versiyon 1.0.1 oldu"  + LocalDateTime.now();
+        return "Hello INFO HSN versiyon 1.0.2 oldu"  + LocalDateTime.now();
     }
 }
