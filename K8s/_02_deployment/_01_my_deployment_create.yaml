@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: devopsDeploy-hsn-hello1
+spec:
+  replica : 10
+  selector:
+    matchLabels:
+      app: devopsDeploy-hsn-hello1
+  template:
+    metadata:
+      labels:
+        app: devopsDeploy-hsn-hello1
+    spec:
+      containers:
+      - name: devopsDeploy-hsn-hello1
+        image: <Image>
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "500m"
+        ports:
+        - containerPort: 8080
