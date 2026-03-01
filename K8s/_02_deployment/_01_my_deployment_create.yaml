@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: devopsDeploy-hsn-hello1
+  name: devopsdeploy-hsn-hello1
 spec:
-  replica : 10
+  replicas : 3
   selector:
     matchLabels:
-      app: devopsDeploy-hsn-hello1
+      app: devopsdeploy-hsn-hello1
   template:
     metadata:
       labels:
-        app: devopsDeploy-hsn-hello1
+        app: devopsdeploy-hsn-hello1
     spec:
       containers:
-      - name: devopsDeploy-hsn-hello1
-        image: <Image>
+      - name: devopsdeploy-hsn-hello1
+        image: hsntpl/demodevops-v104
         resources:
           limits:
             memory: "128Mi"
